@@ -6,6 +6,8 @@
   "service": "front",
   "workspaceFolder": "/app",
   "extensions": [
+    // Docker
+    "ms-azuretools.vscode-docker",
     // ESLint
     "dbaeumer.vscode-eslint",
     // Stylelint
