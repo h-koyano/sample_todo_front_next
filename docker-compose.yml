@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  front:
+    container_name: sample_todo_front_next
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    volumes:
+      - sample_todo_front_next:/app/node_modules
+      - ./:/app:cached
+
+volumes:
+  sample_todo_front_next:
